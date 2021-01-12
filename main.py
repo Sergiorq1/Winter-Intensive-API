@@ -23,7 +23,7 @@ def run():
         if spotify_song_id:
             added_song = spotify_client.add_song_to_spotify(spotify_song_id)
             if added_song:
-                print(f"Added {song.artist}")
+                print(f"Added {song.artist} - {song.track} to your spotify liked songs")
     # If song found, add to spotify liked songs
 
 if __name__ == '__main__':
